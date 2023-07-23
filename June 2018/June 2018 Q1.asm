@@ -14,8 +14,8 @@
       mov al,75h
       mov bl,10h
       sub al,bl
-      mov ah,0  ;prepare AL for multiplication by clearing AH
-      mul al    ;AX=ALxAL
+      mov ah,0    ;prepare AL for multiplication by clearing AH
+      mul al      ;AX=ALxAL
       mov dx,ax 
       mov ah,4ch
       int 21h 
